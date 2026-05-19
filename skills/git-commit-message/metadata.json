@@ -1,0 +1,7 @@
+{
+  "name": "git-commit-message",
+  "version": "1.0.0",
+  "description": "Genera mensajes de commit detallados y estructurados siguiendo Conventional Commits a partir de los staged changes.",
+  "tags": ["git", "commits", "conventional-commits"],
+  "author": "agent-skills"
+}

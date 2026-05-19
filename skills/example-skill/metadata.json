@@ -1,7 +1,0 @@
-{
-  "name": "example-skill",
-  "version": "1.0.0",
-  "description": "Skill de ejemplo para demostrar el instalador",
-  "tags": ["demo", "example"],
-  "author": "skill-installer"
-}

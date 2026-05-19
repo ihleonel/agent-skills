@@ -1,0 +1,7 @@
+{
+  "name": "create-skill",
+  "version": "1.0.0",
+  "description": "Crea una nueva skill en el repositorio generando automáticamente SKILL.md y metadata.json con la estructura correcta.",
+  "tags": ["meta", "scaffold", "skills"],
+  "author": "agent-skills"
+}
