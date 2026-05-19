@@ -9,7 +9,7 @@ Cloná el repositorio y prepará el entorno:
 ```bash
 git clone <repo-url>
 cd agent-skills
-npm install
+npm ci
 ```
 
 ## Uso
