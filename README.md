@@ -12,14 +12,21 @@ cd agent-skills
 npm install
 ```
 
----
+## Uso
 
-## Comandos
+Usar `npm run cli -- <comando>` desde la raíz del repositorio. El `--` es la convención de npm para pasar argumentos al script subyacente.
+
+```bash
+npm run cli -- list
+npm run cli -- install example-skill
+npm run cli -- install example-skill --dest ./mi-proyecto/skills
+npm run cli -- info example-skill
+```
 
 ### `list` — Listar skills disponibles
 
 ```bash
-node bin/cli.js list
+npm run cli -- list
 ```
 
 Muestra todas las skills disponibles con su nombre, versión, descripción y tags.
@@ -38,7 +45,7 @@ Muestra todas las skills disponibles con su nombre, versión, descripción y tag
 ### `install <skill-name>` — Instalar una skill (interactivo)
 
 ```bash
-node bin/cli.js install example-skill
+npm run cli -- install example-skill
 ```
 
 Muestra el nombre y descripción de la skill y pregunta al usuario dónde instalarla.
@@ -58,7 +65,7 @@ Si la carpeta destino ya existe, pregunta si desea sobreescribirla.
 ### `install <skill-name> --dest <ruta>` — Instalar con destino directo
 
 ```bash
-node bin/cli.js install example-skill --dest ./my-project/skills
+npm run cli -- install example-skill --dest ./my-project/skills
 ```
 
 Instala la skill directamente en la ruta especificada, sin preguntas interactivas.
@@ -78,7 +85,7 @@ Instala la skill directamente en la ruta especificada, sin preguntas interactiva
 ### `info <skill-name>` — Ver información de una skill
 
 ```bash
-node bin/cli.js info example-skill
+npm run cli -- info example-skill
 ```
 
 Muestra los metadatos de la skill y la lista de archivos que contiene.
@@ -150,7 +157,7 @@ No tiene un formato estricto; puede incluir secciones, ejemplos, restricciones, 
 
 4. (Opcional) Agregá cualquier archivo o subcarpeta adicional que la skill necesite.
 
-La skill aparecerá automáticamente en `node bin/cli.js list` sin necesidad de registrarla manualmente.
+La skill aparecerá automáticamente en `npm run cli -- list` sin necesidad de registrarla manualmente.
 
 ---
 
